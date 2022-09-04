@@ -1,0 +1,55 @@
+.why-choosing {
+  padding: 120px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 130px;
+  }
+
+  &__heading {
+    max-width: 242px;
+
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+  &__arguments-container {
+    display: flex;
+    column-gap: 28px;
+  }
+
+  &__argument {
+    max-width: 284px;
+
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+
+  &__argument-title {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    flex: 0 0 auto;
+  }
+
+  &__argument-text {
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 1.8;
+
+    flex: 1 0 auto;
+  }
+
+  &__link-btn-container {
+
+    flex: 0 0 auto;
+
+
+  }
+
+}

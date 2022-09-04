@@ -1,0 +1,51 @@
+.search-form {
+  max-width: 344px;
+  margin: 0 auto;
+
+  &__label {
+    padding: 15px 0 15px 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+    border: 0.8px solid rgba(255, 255, 255, 0.6);
+    border-radius: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__input {
+    width: 100%;
+    margin-right: 10px;
+    background:none;
+
+    color: #fff;
+
+    &::placeholder {
+      color: #fff;
+      opacity: 0.8;
+    }
+  }
+
+  &__button {
+    margin-right: 8px;
+    padding: 12.5px;
+    border-radius: 50%;
+    background: $orange;
+
+    transition: background 0.2s linear;
+
+    &:hover {
+      background: $orange-hover;
+    }
+
+    &:hover &-ico {
+      transform: scale(1.1);
+    }
+
+    &-ico {
+      transition: transform 0.2s linear;
+    }
+  }
+
+}

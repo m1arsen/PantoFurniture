@@ -1,0 +1,21 @@
+html, body {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  color: $black;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  color: #fff;
+}
+
+.none {
+  display: none;
+}

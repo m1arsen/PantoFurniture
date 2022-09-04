@@ -1,0 +1,106 @@
+.testimonials {
+  padding: 175px 0 214px;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    letter-spacing: 0.175em;
+    text-transform: uppercase;
+    color: $orange;
+  }
+
+  &__subtitle {
+    margin-bottom: 60px;
+
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  &__slider-card {
+    padding: 220px 19px 19px 19px;
+    max-width: 370px;
+
+    position: relative;
+    overflow: hidden;
+
+
+
+
+    &:hover &-bg{
+      transform: scale(1.03);
+    }
+
+    &-bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      transition: transform 0.5s linear;
+    }
+
+  }
+
+  &__info {
+    padding: 38px 0 17px;
+    background-color: #fff;
+    border-radius: 18.12px;
+    text-align: center;
+
+    position: relative;
+  }
+
+  &__people {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -33px;
+
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin-bottom: 6px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  &__subname {
+    margin-bottom: 22px;
+
+    font-size: 12px;
+    opacity: 0.6;
+  }
+
+  &__text {
+    margin: 0 auto 22px;
+    max-width: 252px;
+
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  &__scores {
+    display: flex;
+    column-gap: 6.17px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__star {
+    max-width: 11.67px;
+    &:last-child {
+      opacity: 0.3;
+    }
+
+  }
+
+}
