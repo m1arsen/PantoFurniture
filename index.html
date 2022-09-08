@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/fonts.css">
   <title>PantoFurniture</title>
 </head>
-<body>
+<body >
 
   <main class="main">
 
@@ -21,18 +21,20 @@
           <a href="#!" class="logo">Panto</a>
 
           <nav class="header__nav">
-            <ul>
+            <ul class="header__nav-list">
               <li>
                 <a class="header__dropdown" href="#!">
                   <span>Furniture</span>
-                  <img class="header__dropdown-ico" src="./img/icons/dropdown.svg" alt="dropdown ico">
+                  <svg class="header__dropdown-ico" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.95911e-05 1.49554C-0.000313759 1.62361 0.0232353 1.75016 0.0689659 1.86588C0.114697 1.98159 0.181446 2.08354 0.264311 2.16423L4.54962 6.30498C4.67742 6.43107 4.83772 6.5 5.00315 6.5C5.16858 6.5 5.32888 6.43107 5.45668 6.30498L9.74199 2.01849C9.88784 1.87297 9.97957 1.66387 9.99698 1.43718C10.0144 1.21048 9.95607 0.984775 9.83484 0.8097C9.71361 0.634626 9.5394 0.524529 9.35054 0.503628C9.16168 0.482727 8.97364 0.552735 8.82779 0.698252L4.99958 4.53037L1.17137 0.826847C1.06653 0.722013 0.93887 0.655421 0.803492 0.63495C0.668113 0.614478 0.53068 0.640983 0.407457 0.711329C0.284235 0.781675 0.180379 0.892918 0.108179 1.03189C0.0359783 1.17087 -0.00154495 1.33177 4.95911e-05 1.49554Z"/>
+                    </svg>
                 </a>
                 <div class="header__dropdown-content">
-                  <a href="#why-choosing">Why choosing us</a>
-                  <a href="#best-selling">Best selling product</a>
-                  <a href="#experiences">Experiences</a>
-                  <a href="#materials">Materials</a>
-                  <a href="#testimonials">Testimonials</a>
+                  <a class="header__dropdown-link" href="#why-choosing">Why choosing us</a>
+                  <a class="header__dropdown-link" href="#best-selling">Best selling product</a>
+                  <a class="header__dropdown-link" href="#experiences">Experiences</a>
+                  <a class="header__dropdown-link" href="#materials">Materials</a>
+                  <a class="header__dropdown-link" href="#testimonials">Testimonials</a>
                 </div>
               </li>
               <li><a href="#!">Shop</a></li>
@@ -41,10 +43,18 @@
             </ul>
           </nav>
 
-          <div class="cart">
-            <a href="#!" class="cart__link">
-              <img src="./img/icons/cart.svg" alt="cart" class="cart__img">
-            </a>
+          <div class="header__right-container">
+            <div class="cart">
+              <a href="#!" class="cart__link">
+                <img src="./img/icons/cart.svg" alt="cart" class="cart__img">
+              </a>
+            </div>
+
+            <div class="header__nav-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
 
         </div>
@@ -660,53 +670,60 @@
       <div class="testimonials__slider swiper">
         <div class="swiper-wrapper">
 
+
           <div class="testimonials__slider-card swiper-slide">
             <img src="./img/testimonials/01.jpg" alt="Bang Upin" class="testimonials__slider-card-bg">
-            <div class="testimonials__info">
-              <img src="./img/testimonials/01-avatar.svg" alt="Bang Upin" class="testimonials__people">
-              <h3 class="testimonials__name">Bang Upin</h3>
-              <p class="testimonials__subname">Pedagang Asongan</p>
-              <p class="testimonials__text">“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“</p>
-              <div class="testimonials__scores">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+            <div class="testimonials__container">
+              <div class="testimonials__info">
+                <img src="./img/testimonials/01-avatar.svg" alt="Bang Upin" class="testimonials__people">
+                <h3 class="testimonials__name">Bang Upin</h3>
+                <p class="testimonials__subname">Pedagang Asongan</p>
+                <p class="testimonials__text">“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“</p>
+                <div class="testimonials__scores">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                </div>
               </div>
             </div>
           </div>
 
           <div class="testimonials__slider-card swiper-slide">
             <img src="./img/testimonials/02.jpg" alt="Ibuk Sukijan" class="testimonials__slider-card-bg">
-            <div class="testimonials__info">
-              <img src="./img/testimonials/02-avatar.svg" alt="Ibuk Sukijan" class="testimonials__people">
-              <h3 class="testimonials__name">Ibuk Sukijan</h3>
-              <p class="testimonials__subname">Ibu Rumah Tangga</p>
-              <p class="testimonials__text">“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“</p>
-              <div class="testimonials__scores">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+            <div class="testimonials__container">
+              <div class="testimonials__info">
+                <img src="./img/testimonials/02-avatar.svg" alt="Ibuk Sukijan" class="testimonials__people">
+                <h3 class="testimonials__name">Ibuk Sukijan</h3>
+                <p class="testimonials__subname">Ibu Rumah Tangga</p>
+                <p class="testimonials__text">“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“</p>
+                <div class="testimonials__scores">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                </div>
               </div>
             </div>
           </div>
 
           <div class="testimonials__slider-card swiper-slide">
             <img src="./img/testimonials/03.jpg" alt="Mpok Ina" class="testimonials__slider-card-bg">
-            <div class="testimonials__info">
-              <img src="./img/testimonials/03-avatar.svg" alt="Mpok Ina" class="testimonials__people">
-              <h3 class="testimonials__name">Mpok Ina</h3>
-              <p class="testimonials__subname">Karyawan Swasta</p>
-              <p class="testimonials__text">“It looks very nice sangat terjangkau untuk kantong saya yang tidak terlalu banyak“</p>
-              <div class="testimonials__scores">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
-                <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+            <div class="testimonials__container">
+              <div class="testimonials__info">
+                <img src="./img/testimonials/03-avatar.svg" alt="Mpok Ina" class="testimonials__people">
+                <h3 class="testimonials__name">Mpok Ina</h3>
+                <p class="testimonials__subname">Karyawan Swasta</p>
+                <p class="testimonials__text">“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“</p>
+                <div class="testimonials__scores">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                  <img src="./img/icons/star.svg" alt="star" class="testimonials__star">
+                </div>
               </div>
             </div>
           </div>
@@ -730,10 +747,15 @@
 
         <div class="footer__links">
 
-          <ul class="footer__services">
-            <h3>
-              <a href="#!">Services</a>
-            </h3>
+          <ul class="footer__spoller footer__services" id="spoller_1">
+
+            <button class="footer__btn" data-spoller="#spoller_1">
+              <span>Services</span>
+              <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.95911e-05 1.49554C-0.000313759 1.62361 0.0232353 1.75016 0.0689659 1.86588C0.114697 1.98159 0.181446 2.08354 0.264311 2.16423L4.54962 6.30498C4.67742 6.43107 4.83772 6.5 5.00315 6.5C5.16858 6.5 5.32888 6.43107 5.45668 6.30498L9.74199 2.01849C9.88784 1.87297 9.97957 1.66387 9.99698 1.43718C10.0144 1.21048 9.95607 0.984775 9.83484 0.8097C9.71361 0.634626 9.5394 0.524529 9.35054 0.503628C9.16168 0.482727 8.97364 0.552735 8.82779 0.698252L4.99958 4.53037L1.17137 0.826847C1.06653 0.722013 0.93887 0.655421 0.803492 0.63495C0.668113 0.614478 0.53068 0.640983 0.407457 0.711329C0.284235 0.781675 0.180379 0.892918 0.108179 1.03189C0.0359783 1.17087 -0.00154495 1.33177 4.95911e-05 1.49554Z"/>
+                </svg>
+            </button>
+
             <li>
               <a href="#!">Email Marketing</a>
             </li>
@@ -745,10 +767,15 @@
             </li>
           </ul>
 
-          <ul class="footer__furniture">
-            <h3>
-              <a href="#!">Furniture</a>
-            </h3>
+          <ul class="footer__spoller footer__furniture" id="spoller_2">
+
+            <button class="footer__btn" data-spoller="#spoller_2">
+              <span>Furniture</span>
+              <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.95911e-05 1.49554C-0.000313759 1.62361 0.0232353 1.75016 0.0689659 1.86588C0.114697 1.98159 0.181446 2.08354 0.264311 2.16423L4.54962 6.30498C4.67742 6.43107 4.83772 6.5 5.00315 6.5C5.16858 6.5 5.32888 6.43107 5.45668 6.30498L9.74199 2.01849C9.88784 1.87297 9.97957 1.66387 9.99698 1.43718C10.0144 1.21048 9.95607 0.984775 9.83484 0.8097C9.71361 0.634626 9.5394 0.524529 9.35054 0.503628C9.16168 0.482727 8.97364 0.552735 8.82779 0.698252L4.99958 4.53037L1.17137 0.826847C1.06653 0.722013 0.93887 0.655421 0.803492 0.63495C0.668113 0.614478 0.53068 0.640983 0.407457 0.711329C0.284235 0.781675 0.180379 0.892918 0.108179 1.03189C0.0359783 1.17087 -0.00154495 1.33177 4.95911e-05 1.49554Z"/>
+                </svg>
+            </button>
+
             <li>
               <a href="#!">Beds</a>
             </li>
@@ -760,10 +787,14 @@
             </li>
           </ul>
 
-          <ul class="footer__follow-us">
-            <h3>
-              <a href="#!">Follow Us</a>
-            </h3>
+          <ul class="footer__spoller footer__follow-us" id="spoller_3">
+
+            <button class="footer__btn" data-spoller="#spoller_3">
+              <span>Follow Us</span>
+              <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.95911e-05 1.49554C-0.000313759 1.62361 0.0232353 1.75016 0.0689659 1.86588C0.114697 1.98159 0.181446 2.08354 0.264311 2.16423L4.54962 6.30498C4.67742 6.43107 4.83772 6.5 5.00315 6.5C5.16858 6.5 5.32888 6.43107 5.45668 6.30498L9.74199 2.01849C9.88784 1.87297 9.97957 1.66387 9.99698 1.43718C10.0144 1.21048 9.95607 0.984775 9.83484 0.8097C9.71361 0.634626 9.5394 0.524529 9.35054 0.503628C9.16168 0.482727 8.97364 0.552735 8.82779 0.698252L4.99958 4.53037L1.17137 0.826847C1.06653 0.722013 0.93887 0.655421 0.803492 0.63495C0.668113 0.614478 0.53068 0.640983 0.407457 0.711329C0.284235 0.781675 0.180379 0.892918 0.108179 1.03189C0.0359783 1.17087 -0.00154495 1.33177 4.95911e-05 1.49554Z"/>
+                </svg>
+            </button>
 
             <li>
               <a href="#!">

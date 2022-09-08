@@ -99,3 +99,47 @@
 
 
 }
+
+@media(max-width: 1280px) {
+
+  .materials {
+
+    &__subtitle {
+      font-size: calc(28px + (42 - 28) * (100vw - 320px) / (1280 - 320));
+    }
+
+  }
+
+}
+
+@media(max-width: 946px) {
+
+  .materials {
+
+    &__body {
+      max-width: calc(380px + (556 - 380) * (100vw - 624px) / (956 - 624));
+    }
+
+  }
+
+}
+
+@media(max-width: 624px) {
+
+  .materials {
+
+    &__info {
+      margin-bottom: 10px;
+    }
+
+    &__body {
+      max-width: unset;
+    }
+
+    &__img {
+      display: none;
+    }
+
+  }
+
+}

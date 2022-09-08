@@ -22,15 +22,20 @@
     text-transform: capitalize;
   }
 
+  &__container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
   &__slider-card {
-    padding: 220px 19px 19px 19px;
-    max-width: 370px;
+    width: 370px;
+    height: 476px;
 
     position: relative;
     overflow: hidden;
-
-
-
 
     &:hover &-bg{
       transform: scale(1.03);
@@ -43,13 +48,15 @@
       bottom: 0;
       left: 0;
 
+      width: 100%;
+
       transition: transform 0.5s linear;
     }
 
   }
 
   &__info {
-    padding: 38px 0 17px;
+    padding: 38px 15px 17px;
     background-color: #fff;
     border-radius: 18.12px;
     text-align: center;
@@ -99,6 +106,43 @@
     max-width: 11.67px;
     &:last-child {
       opacity: 0.3;
+    }
+
+  }
+
+}
+
+@media(max-width: 1280px) {
+
+  .testimonials {
+    padding:  calc(40px + (175 - 40) * (100vw - 320px) / (1280 - 320)) 0
+              calc(40px + (214 - 40) * (100vw - 320px) / (1280 - 320));
+
+    &__subtitle {
+      margin-bottom: calc(25px + (60 - 25) * (100vw - 320px) / (1280 - 320));
+    }
+
+    &__subname {
+      margin-bottom: calc(10px + (22 - 10) * (100vw - 320px) / (1280 - 320));
+    }
+
+    &__text {
+      margin-bottom: calc(10px + (22 - 10) * (100vw - 320px) / (1280 - 320));
+    }
+
+    &__subtitle {
+      font-size: calc(30px + (42 - 30) * (100vw - 320px) / (1280 - 320));
+    }
+  }
+
+}
+
+@media(max-width: 414px) {
+
+  .testimonials {
+
+    &__slider-card {
+        height: calc(375px + (477 - 375) * (100vw - 320px) / (414 - 320));
     }
 
   }
