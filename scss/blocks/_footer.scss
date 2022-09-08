@@ -43,19 +43,16 @@
       row-gap: 16px;
     }
 
-    h3 a {
-      margin-bottom: 4px;
 
-      font-size: 17px;
-      font-weight: 400;
-      color: #F6973F;
 
-      transition: color 0.2s linear;
+    button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      &:hover {
-        color: $orange-hover;
-      }
-
+    button svg {
+      display: none;
     }
 
     li a {
@@ -67,6 +64,22 @@
 
       &:hover {
         opacity: 0.8;
+      }
+    }
+  }
+
+  &__btn {
+    span {
+      margin-bottom: 4px;
+
+      font-size: 17px;
+      font-weight: 400;
+      color: $orange;
+
+      transition: color 0.2s linear;
+
+      &:hover {
+        color: $orange-hover;
       }
     }
   }
@@ -113,7 +126,134 @@
     }
   }
 }
-.container {
+
+
+@media(max-width: 1280px) {
+
+  .footer {
+    padding:  calc(30px + (118 - 30) * (100vw - 320px) / (1280 - 320)) 0
+              calc(20px + (56 - 20) * (100vw - 320px) / (1280 - 320));
+
+    &__top-row {
+      column-gap: calc(15px + (152 - 15) * (100vw - 320px) / (1280 - 320));
+    }
+  }
+
 }
-.logo {
+
+@media(max-width: 624px) {
+
+  .footer {
+
+    &__top-row {
+      margin-bottom: calc(20px + (120 - 20) * (100vw - 320px) / (624 - 320));
+
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      column-gap: 0;
+      row-gap: 30px;
+    }
+
+    &__panto {
+      max-width: unset;
+    }
+
+    &__logo {
+      margin-bottom: 10px;
+    }
+
+    &__links {
+      justify-content: space-between;
+    }
+
+    &__documents {
+      column-gap: 20px;
+    }
+  }
+
+}
+
+@media(max-width: 414px) {
+
+  .footer {
+
+    button svg {
+      display: block;
+    }
+
+    &__btn {
+      span {
+        color: $black;
+        transition: .3s ease-in-out;
+
+        &:hover {
+          color: unset;
+        }
+      }
+
+      svg {
+        transition: .3s ease-in-out;
+
+        path {
+          fill: $black;
+        }
+      }
+
+      &.open svg {
+        transform: rotate(180deg);
+
+        path {
+          fill: $orange;
+        }
+      }
+
+      &.open span {
+        color: $orange;
+      }
+    }
+
+    &__spoller {
+      padding: 15px;
+      border: 2px solid #eee;
+      border-radius: 10px;
+
+      max-height: 58px;
+      overflow: hidden;
+      transition: .3s ease-in-out;
+
+      &.open {
+        max-height: 200px;
+      }
+    }
+
+    &__links {
+      flex-direction: column;
+      row-gap: 5px;
+
+      ul {
+        width: unset;
+      }
+    }
+
+    &__top-row {
+      row-gap: 10px;
+    }
+
+    &__bottom-row {
+      flex-direction: column;
+      text-align: center;
+      row-gap: 10px;
+    }
+
+    &__documents {
+      flex-direction: column;
+      row-gap: 10px;
+      order: 1;
+    }
+
+    &__copyright {
+      order: 2;
+    }
+  }
+
 }
