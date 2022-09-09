@@ -944,9 +944,6 @@ a {
   display: flex;
   justify-content: space-around;
 }
-.footer__links a {
-  display: inline-block;
-}
 .footer__links ul {
   width: 133px;
   display: flex;
