@@ -412,6 +412,7 @@ a {
   padding: 7px 19.5px;
   border-radius: 32px;
   line-height: 1.85;
+  color: #1E1E1E;
   transition: 0.2s linear, color 0.15s ease-in;
   z-index: 2;
 }
